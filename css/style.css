@@ -1,0 +1,96 @@
+
+html{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+.wrapper{
+	width: 100%;
+	display: grid;
+	grid-gap: 20px;
+}
+
+img{
+	max-width: 100%;	
+}
+
+.div1{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(2, 1fr);
+	background-color: #4e94ab;
+	color: #fff;
+	padding: 20px 20px 0px 50px;
+}
+
+.div2{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas:
+	'screen screen screensize';
+
+}
+
+.screen{
+	grid-area:screen;
+	padding: 20px 20px 0px 50px;
+}
+
+.screensize{
+	grid-area: screensize;
+}
+
+.div3{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas:
+	'size size size';
+	
+	
+}
+.size{
+	grid-area: size;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.4)),url('../img/tv-room.jpg');
+	background-size: cover;
+	background-position: center;
+	padding: 20px 80px 0px 80px;
+	color: #fff;
+}
+
+table,th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.div4{
+	padding: 0px 80px 0px 80px;
+	color: #fff;
+	position: relative;
+	z-index: 15;
+	
+}
+
+.div5{
+	display: grid;
+	grid-gap: 8px;
+	grid-template-areas:
+	'display display type';
+	padding: 20px 20px 0px 50px;
+
+}
+
+.display{
+	grid-area:display;
+	
+}
+
+.type{
+	grid-area: type;
+}
+
+
